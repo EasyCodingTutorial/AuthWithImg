@@ -1,0 +1,107 @@
+.InputBox {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    /* Ensure labels and inputs are left-aligned */
+}
+
+.InputBox label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.InputBox input {
+    width: 100%;
+    /* Allow input to take full width of parent */
+    max-width: 600px;
+    /* Maximum width for larger screens */
+    padding: 12px 14px;
+    /* Padding for comfort */
+    font-size: 17px;
+    /* Base font size for input */
+    font-weight: 700;
+    border-radius: 999px;
+    /* Rounded corners */
+    margin-top: 7px;
+    /* Space above input */
+    background: none;
+    border: 1px solid #fff;
+    /* White border */
+    color: #fff;
+    /* White text color */
+    box-sizing: border-box;
+    /* Include padding in width */
+}
+
+/* For Messages */
+.ErrorMessage {
+    color: #f00;
+    /* Red color for error messages */
+    margin-left: 8px;
+    /* Space on the left */
+    font-size: 14px;
+    /* Base size for error messages */
+}
+
+.InputError {
+    border: 1px solid #f00 !important;
+    /* Red border on error */
+    color: #f00 !important;
+    /* Red text on error */
+}
+
+/* For Responsive Style */
+@media(max-width: 1200px) {
+    .InputBox input {
+        max-width: 500px;
+        /* Adjust max-width for medium screens */
+    }
+}
+
+@media(max-width: 790px) {
+    .InputBox label {
+        font-weight: 700;
+        font-size: 15px;
+        /* Slightly smaller font size */
+    }
+
+    .InputBox input {
+        max-width: 400px !important;
+        /* Ensure input is responsive */
+    }
+}
+
+@media(max-width: 590px) {
+    .InputBox label {
+        font-size: 13px;
+        /* Smaller label for smaller screens */
+    }
+
+    .InputBox input {
+        font-size: 14px;
+        /* Adjust input font size */
+        max-width: 300px !important;
+        /* Max width for small devices */
+    }
+}
+
+@media(max-width: 420px) {
+    .InputBox label {
+        font-size: 10px;
+        /* Small label for very small screens */
+    }
+
+    .ErrorMessage {
+        font-size: 10px !important;
+        /* Smaller error message */
+    }
+
+    .InputBox input {
+        font-size: 14px;
+        /* Base input font size */
+        max-width: 200px !important;
+        /* Smallest input width */
+        padding: 8px 10px;
+        /* Reduced padding */
+    }
+}

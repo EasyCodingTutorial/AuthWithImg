@@ -1,0 +1,169 @@
+.AuthForm {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    /* Center the form */
+}
+
+.AuthForm h6 {
+    font-weight: 800;
+    font-size: 40px;
+    /* Use viewport width for scalability */
+    text-align: center;
+    margin-block: 20px;
+}
+
+/* For Btn */
+.Btn {
+    width: 100%;
+    background: var(--main);
+    color: #fff;
+    font-weight: 700;
+    padding: 12px;
+    /* Increase padding for touch devices */
+    border-radius: 999px;
+    font-size: 18px;
+    /* Responsive font size */
+    cursor: pointer;
+}
+
+/* For Custom Messages */
+.CustomMess {
+    margin-top: 8px;
+    margin-left: 8px;
+    color: #ccc;
+}
+
+.CustomMess span {
+    text-decoration: underline;
+    color: var(--main);
+    cursor: pointer;
+}
+
+/* For Error/Success Messages */
+.ErrorMessage,
+.SuccessMessage {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    /* Responsive font size */
+    font-weight: 700;
+    width: max-content;
+    color: #fff;
+}
+
+.ErrorMessage {
+    background: #f00;
+}
+
+.SuccessMessage {
+    background: green;
+}
+
+/* For Uploadthing */
+.UploadThing_Parent {
+    margin-bottom: 10px;
+}
+
+.UploadThing_Parent label {
+    font-weight: 700;
+}
+
+.UploadThing_Parent .ImgUploader {
+    display: flex;
+    gap: 20px;
+}
+
+.UploadThing_Parent div img {
+    height: auto;
+    /* Ensure images maintain aspect ratio */
+    width: 100%;
+    max-height: 300px;
+    max-width: 100%;
+    /* Ensure images are responsive */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.FieldValidation_Img {
+    color: #f00;
+}
+
+/* Responsive Style */
+@media (max-width: 1200px) {
+    .AuthForm {
+        max-width: 550px;
+        height: max-content;
+        /* Adjust max-width for medium screens */
+    }
+
+    .Btn {
+        width: max-content;
+        /* Keep button size flexible */
+    }
+}
+
+@media (max-width: 790px) {
+    .AuthForm {
+        max-width: 450px;
+        /* Adjust max-width for smaller screens */
+    }
+
+    .AuthForm h6 {
+        font-size: 5vw;
+        /* Adjust font size */
+    }
+
+    .UploadThing_Parent .ImgUploader {
+        display: block;
+        /* Stack uploader items on smaller screens */
+    }
+}
+
+@media (max-width: 590px) {
+    .AuthForm {
+        max-width: 350px;
+        /* Smaller max-width for small devices */
+    }
+}
+
+@media (max-width: 420px) {
+    .AuthForm {
+        padding: 0px;
+        box-shadow: none;
+        /* Remove shadow for very small screens */
+        max-width: 250px;
+        /* Smallest max-width */
+    }
+
+    .Btn {
+        font-size: 3vw;
+        /* Smaller button text */
+        padding: 10px;
+        /* Reduce padding for very small devices */
+    }
+
+    .UploadThing_Parent .ImgUploader {
+        width: 100%;
+        /* Make the uploader take full width */
+        max-width: 300px;
+        /* Keep max-width to prevent overflowing */
+    }
+
+    .UploadThing_Parent label {
+        font-size: 4vw;
+        /* Make label text responsive */
+    }
+
+    .UploadThing_Parent div img {
+        max-width: 90%;
+        /* Adjust image size for small screens */
+    }
+}
