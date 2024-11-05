@@ -1,7 +1,7 @@
 # Authentication System Using NEXT_AUTH
 
 In this tutorial, we’ll create a secure authentication system using **NextAuth.js** and **MongoDB** for data persistence. This guide is ideal for developers looking to implement route protection, credential-based login, and data management using modern web technologies without social authentication providers.
-
+ 
 ## Technologies Used
  - **Next.js**: A React framework for server-side rendering and static site generation, improving performance and SEO.
  - **NextAuth.js**: A flexible authentication solution for Next.js applications, allowing us to secure routes and handle session management.
@@ -30,4 +30,5 @@ Follow these steps to get the project running locally:
 Contributions are welcome! Feel free to open issues for any bugs, feature requests, or suggestions.
 
 ## Learn By Watching Video ▶️
+[![Watch Demo Video](https://img.youtube.com/vi/7ozwDPr7sog/maxresdefault.jpg)](https://www.youtube.com/watch?v=7ozwDPr7sog)
 
